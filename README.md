@@ -18,6 +18,7 @@ I have used Swift UI LazyGridView  to create a grid of clocks. Time in each indi
 
 <h2>To Do</h2>>
 <ul>
+<li>[ ] Need to implement clock needle using bezier path for smoothg animation.
 <li>[ ] Need to handle window size properly.
 <li>[ ] Optimise code for clock data matrix handling
 <li>[ ] Need to add more effects
