@@ -11,6 +11,11 @@
 		ED4A858D27B54CD700B6B7CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A858C27B54CD700B6B7CA /* ContentView.swift */; };
 		ED4A858F27B54CD900B6B7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4A858E27B54CD900B6B7CA /* Assets.xcassets */; };
 		ED4A859227B54CD900B6B7CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4A859127B54CD900B6B7CA /* Preview Assets.xcassets */; };
+		ED4A85A127B55C5100B6B7CA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A859A27B55C5100B6B7CA /* AppConstants.swift */; };
+		ED4A85A227B55C5100B6B7CA /* ClockDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A859C27B55C5100B6B7CA /* ClockDataManager.swift */; };
+		ED4A85A327B55C5100B6B7CA /* ClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A859E27B55C5100B6B7CA /* ClockViewModel.swift */; };
+		ED4A85A427B55C5100B6B7CA /* ClockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A85A027B55C5100B6B7CA /* ClockData.swift */; };
+		ED4A85A627B55C9A00B6B7CA /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A85A527B55C9A00B6B7CA /* ClockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		ED4A858E27B54CD900B6B7CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4A859127B54CD900B6B7CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED4A859327B54CD900B6B7CA /* Clockception.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clockception.entitlements; sourceTree = "<group>"; };
+		ED4A859A27B55C5100B6B7CA /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		ED4A859C27B55C5100B6B7CA /* ClockDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockDataManager.swift; sourceTree = "<group>"; };
+		ED4A859E27B55C5100B6B7CA /* ClockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockViewModel.swift; sourceTree = "<group>"; };
+		ED4A85A027B55C5100B6B7CA /* ClockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockData.swift; sourceTree = "<group>"; };
+		ED4A85A527B55C9A00B6B7CA /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,13 @@
 		ED4A858927B54CD700B6B7CA /* Clockception */ = {
 			isa = PBXGroup;
 			children = (
+				ED4A859927B55C5100B6B7CA /* Constants */,
+				ED4A859F27B55C5100B6B7CA /* Model */,
+				ED4A859B27B55C5100B6B7CA /* Util */,
+				ED4A859D27B55C5100B6B7CA /* ViewModel */,
 				ED4A858A27B54CD700B6B7CA /* ClockceptionApp.swift */,
 				ED4A858C27B54CD700B6B7CA /* ContentView.swift */,
+				ED4A85A527B55C9A00B6B7CA /* ClockView.swift */,
 				ED4A858E27B54CD900B6B7CA /* Assets.xcassets */,
 				ED4A859327B54CD900B6B7CA /* Clockception.entitlements */,
 				ED4A859027B54CD900B6B7CA /* Preview Content */,
@@ -67,6 +82,38 @@
 				ED4A859127B54CD900B6B7CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED4A859927B55C5100B6B7CA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				ED4A859A27B55C5100B6B7CA /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		ED4A859B27B55C5100B6B7CA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				ED4A859C27B55C5100B6B7CA /* ClockDataManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		ED4A859D27B55C5100B6B7CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED4A859E27B55C5100B6B7CA /* ClockViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED4A859F27B55C5100B6B7CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED4A85A027B55C5100B6B7CA /* ClockData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4A85A427B55C5100B6B7CA /* ClockData.swift in Sources */,
 				ED4A858D27B54CD700B6B7CA /* ContentView.swift in Sources */,
+				ED4A85A127B55C5100B6B7CA /* AppConstants.swift in Sources */,
+				ED4A85A227B55C5100B6B7CA /* ClockDataManager.swift in Sources */,
+				ED4A85A627B55C9A00B6B7CA /* ClockView.swift in Sources */,
 				ED4A858B27B54CD700B6B7CA /* ClockceptionApp.swift in Sources */,
+				ED4A85A327B55C5100B6B7CA /* ClockViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
