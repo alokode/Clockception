@@ -1,6 +1,6 @@
-<h1> Clockception - SwiftUI Mac App</h1>
+<h1> 🕐🕐🕐 Clockception - SwiftUI Mac App 🕐🕐🕐</h1>
 
-<h3>Clockception is a SwiftUI Mac app which shows a grid of clocks and to form a Kinetic wall clock</h3>
+<h3>Clockception is a SwiftUI Mac app which shows a grid of clocks which form a Kinetic wall clock</h3>
 
 <p>
 I have used Swift UI LazyGridView  to create a grid of clocks. Time in each individual clock is updated according to the effects to form a shape
